@@ -1,0 +1,20 @@
+# Gestión de Autoescuela - Práctica Final
+
+Sistema de gestión para autoescuelas desarrollado en PHP, SQL y HTML.
+
+## Requisitos
+- Servidor Apache (Linux/Ubuntu preferiblemente).
+- MySQL / MariaDB.
+- PHP 7.4 o superior.
+
+## Instalación
+1. Clonar este repositorio en `/var/www/html/autoescuela`.
+2. Crear la base de datos `autoescuela` en MySQL.
+3. Importar los archivos SQL (`script_creacion.sql` y `carga_datos.sql`).
+4. Configurar el usuario y contraseña de la base de datos en `db.php`.
+
+## Funcionalidades
+- CRUD completo de clientes, profesores y vehículos.
+- Borrado lógico (activo/inactivo).
+- Agenda con asignación automática de recursos.
+- Restricción de 4 horas máximas por profesor y 1 clase al día por cliente.

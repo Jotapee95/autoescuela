@@ -1,0 +1,19 @@
+ESQUEMA DE TABLAS Y RELACIONES:
+
+1. TABLA 'clientes': Datos de alumnos. 
+   - PK: id.
+   
+2. TABLA 'profesores': Datos del personal docente.
+   - PK: id.
+   
+3. TABLA 'vehiculos': Flota de la autoescuela.
+   - PK: id. 
+   - FK: id_profesor_habitual (Relacionado con profesores.id).
+
+4. TABLA 'clases': Gestión de la agenda.
+   - PK: id.
+   - FK: id_cliente (Relacionado con clientes.id).
+   - FK: id_profesor (Relacionado con profesores.id).
+   - FK: id_vehiculo (Relacionado con vehiculos.id).
+
+Lógica: Una clase vincula a un alumno con un profesor y un coche en un horario único.
